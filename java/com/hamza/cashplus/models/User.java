@@ -1,0 +1,63 @@
+package com.hamza.cashplus.models;
+
+public class User {
+    private int id;
+    private String email;
+    private String password;
+    private boolean isVerified;
+
+    // Constructor with all fields
+    public User(int id, String email, String password, boolean isVerified) {
+        this.id = id;
+        this.email = email;
+        this.password = password;
+        this.isVerified = isVerified;
+    }
+
+    // Constructor without the 'isVerified' field (e.g., for when the user is not verified yet)
+    public User(int id, String email, String password) {
+        this.id = id;
+        this.email = email;
+        this.password = password;
+        this.isVerified = false;  // default value for new users
+    }
+
+    // Getters and Setters
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public boolean isVerified() {
+        return isVerified;
+    }
+
+    public void setVerified(boolean isVerified) {
+        this.isVerified = isVerified;
+    }
+
+    // You can add toString() if you want easy object representation for debugging
+    @Override
+    public String toString() {
+        return "User{id=" + id + ", email='" + email + "', password='" + password + "', isVerified=" + isVerified + "}";
+    }
+}
