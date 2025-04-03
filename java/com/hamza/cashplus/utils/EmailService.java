@@ -5,8 +5,8 @@ import javax.mail.internet.*;
 import java.util.Properties;
 
 public class EmailService {
-    private final String username = "mustapha.jarmimm@gmail.com";
-    private final String password = "mdsn foyy bepc oujn";
+    private final String username = "";
+    private final String password = "";
     
     public boolean sendVerificationEmail(String recipientEmail, String verificationCode) {
         Properties props = new Properties();

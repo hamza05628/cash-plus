@@ -8,7 +8,7 @@ import java.util.Random;
 
 public class EmailUtil {
     public static void sendVerificationEmail(String recipientEmail, String verificationLink) {
-        String from = "mustapha.jarmimm@gmail.com";  // Replace with your email
+        String from = "";  // Replace with your email
         String host = "smtp.gmail.com";  // Replace with your SMTP server
 
         Properties properties = new Properties();
@@ -19,7 +19,7 @@ public class EmailUtil {
 
         Session session = Session.getInstance(properties, new Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication("mustapha.jarmimm@gmail.com", "mdsn foyy bepc oujn"); // Replace with credentials
+                return new PasswordAuthentication("", ""); // Replace with credentials
             }
         });
 
