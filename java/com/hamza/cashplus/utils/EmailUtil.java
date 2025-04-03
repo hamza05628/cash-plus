@@ -45,7 +45,7 @@ public class EmailUtil {
 
     // Send the verification email with the 6-digit code
     public static void sendEmail(String recipientEmail, String verificationCode) {
-        String from = "mustapha.jarmimm@gmail.com";  // Replace with your email
+        String from = "";  // Replace with your email
         String host = "smtp.gmail.com";  // Replace with your SMTP server
 
         Properties properties = new Properties();
@@ -56,7 +56,7 @@ public class EmailUtil {
 
         Session session = Session.getInstance(properties, new Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication("mustapha.jarmimm@gmail.com", "mdsn foyy bepc oujn"); // Replace with credentials
+                return new PasswordAuthentication("", ""); // Replace with credentials
             }
         });
 
